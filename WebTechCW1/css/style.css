@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.main-page{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 0.5px 0.5 0.5 rgb(255, 0, 255);
+    background-size: cover;
+    height: 100vh;
+    width: 100;
+}
+
+.myvideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: azure;
+    transition: all 0.5s ease-out;
+}
+
+.navbar > a:hover{
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 12px;
+    width: 120px;
+    height: 50px;
+    background: rgba(194, 194, 194, 0.271);
+    text-shadow: 2px 2px 2px rgb(255, 0, 255);
+    transition: all 0.5s ease-out;
+    border-radius: 20px;
+}
+
+.main{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    text-shadow: 2px 2px 2px rgb(255, 0, 255);
+}
+
+.main > h1{
+    font-size: 8rem;
+}
+
+.main > h2{
+    margin-top: 80px;
+    font-size: 5rem;
+}
+
+.main > p{
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.main > button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    margin-top: 50px;
+    width: 150px;
+    height: 60px;
+    transition: all 0.5s ease-out;
+    background: rgb(201, 82, 146);
+    color: white;
+    border: 0.7px groove white;
+
+}
+
+.myVideo{
+    margin-left: 16%;
+}
+
+.main > button:hover{
+    background: rgb(201, 82, 146);
+    width: 175px;
+    height: 70px;
+    font-size: 1.6rem;
+    transition: all 0.5s ease-out;
+    border: 2px groove white;
+}
+
+.second-page{
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 50px 25px 25px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+.image-wt{
+    margin-top: 60px;
+    width: 700px;
+    height: 400px;
+    border-radius: 40px;
+}
+
+.text-wt{
+    width: 600px;
+    text-shadow: 0.7px 0.7px 0.7px rgb(255, 188, 65);
+    
+}
+
+.text-wt > h2{
+    font-size: 4rem;
+}
+
+.text-wt > p{
+    font-size: 2rem;
+}
+
+.image-wt-2{
+    margin-top: 0px;
+    width: 700px;
+    height: 400px;
+    border-radius: 40px;
+}
+
+.third-main{
+    background: linear-gradient(to right, rgb(183, 195, 195), rgb(255, 255, 255), rgb(183, 195, 195) );
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    background-size: 400%;
+    animation: animate 10s ease infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.third-page > h2{
+    font-size: 3rem;
+}
+
+.third-page > ol > li{
+    font-size: 1.8rem;
+}
+
+.third-page > h2, ol{
+    text-shadow: 0.7px 0.7px 0.7px rgb(255, 188, 65);
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.beauty{
+    color: rgb(255, 255, 255);
+    text-shadow: 1.2px 1.2px 1.2px rgb(255, 0, 255);
+}
+
+.forth-page > h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 6rem;
+    text-align: center;
+}
+
+.faq-page{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+hr{
+  width: 70%;
+  margin: auto;
+  }
+
+.faq-page {
+    color: white;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    /* outline: none; */
+    margin: auto;
+}
+.faq-body{
+   margin: auto;
+   width: 50%; 
+   padding: auto;
+   
+}
+
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '+';
+    font-size: 2.5rem;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+footer{
+    background: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-nav > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: azure;
+    transition: all 0.5s ease-out;
+}
+
+.footer-nav > a:hover{
+        font-size: 1.8rem;
+        text-align: center;
+        padding-top: 12px;
+        width: 120px;
+        height: 50px;
+        text-shadow: 2px 2px 2px rgb(255, 0, 255);
+        transition: all 0.5s ease-out;
+        border-radius: 20px;
+}
+
+.footer-hr{
+    width: 90%;
+}
+
+.info > p{
+    color: white;
+    font-size: 1.6rem;
+}
+
+.about-nav{
+    background: rgb(58, 131, 247);
+    height: 125px;
+}
+
+.about-h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 8rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 188, 65), 0 0 0.1em rgb(255, 188, 65);
+}
+
+.about-img{
+    margin-top: 50px;
+    border-radius: 80px;
+    margin-left: 23%;
+}
+
+.about-p{
+    letter-spacing: 1.2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-left: 300px;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 900px;
+}
