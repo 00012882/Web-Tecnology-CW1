@@ -5,6 +5,12 @@
     font-size: 10px;
 }
 
+.main > button > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
 .main-page{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-position: center;
@@ -41,7 +47,7 @@
     transition: all 0.5s ease-out;
 }
 
-.navbar > a:hover{
+.navbar > a.nav-a:hover{
     font-size: 1.8rem;
     text-align: center;
     padding-top: 12px;
@@ -120,7 +126,7 @@
 }
 
 .text-wt{
-    width: 600px;
+    width: 550px;
     text-shadow: 0.7px 0.7px 0.7px rgb(255, 188, 65);
     
 }
@@ -175,14 +181,23 @@
     text-align: center;
 }
 
+.forth-main{
+    background: black;
+}
+
 .beauty{
     color: rgb(255, 255, 255);
     text-shadow: 1.2px 1.2px 1.2px rgb(255, 0, 255);
 }
 
-.forth-page > h1{
+
+
+.faq-text{
+    margin-bottom: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 6rem;
+    letter-spacing: 1px;
+    line-height: 40px;
     text-align: center;
 }
 
@@ -196,13 +211,21 @@ hr{
   margin: auto;
   }
 
+.faq-page > strong{
+    font-size: 2.1rem;
+    text-shadow: 1.2px 1.2px 1.2px rgb(255, 0, 255);
+    
+}
+
 .faq-page {
+    position: relative;
+    list-style-type: none;
     color: white;
     cursor: pointer;
-    padding: 30px 20px;
-    width: 60%;
+    padding: 20px;
+    width: 90%;
     border: none;
-    /* outline: none; */
+    outline: none;
     margin: auto;
 }
 .faq-body{
@@ -212,17 +235,33 @@ hr{
    
 }
 
-.faq-body {
+.faq-body > li{
+    margin-top: 30px;
+    text-shadow: 1.2px 1.2px 1.2px rgb(255, 0, 255);
+    background: black;
+    color: white;
+    list-style-type: none;
+    font-size: 1.67rem;
+}
+
+li.faq-page > ul.active{
+    display: block;
+}
+
+ul.faq-body {
     padding: 0 18px;
-    background-color: white;
+    background-color: black;
     display: none;
     overflow: hidden;
 }
 .faq-page:after {
+    position: absolute;
     content: '+';
     font-size: 2.5rem;
     color: white;
-    float: right;
+    text-shadow: 1.2px 1.2px 1.2px rgb(255, 0, 255);
+    right: 10px;
+    top: 20px;
     margin-left: 5px;
 }
 
@@ -264,9 +303,16 @@ footer{
     font-size: 1.6rem;
 }
 
+.about-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-nav{
     background: rgb(58, 131, 247);
     height: 125px;
+    margin-bottom: 50px;
 }
 
 .about-h1{
@@ -280,7 +326,6 @@ footer{
 .about-img{
     margin-top: 50px;
     border-radius: 80px;
-    margin-left: 23%;
 }
 
 .about-p{
@@ -288,8 +333,502 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 30px;
     margin-top: 40px;
-    margin-left: 300px;
     font-size: 1.6rem;
     text-align: center;
     width: 900px;
+    text-shadow: 0.7px 0.7px 0.7px rgb(255, 188, 65);
+}
+
+.goback{
+    padding-top: 150px;
+    margin-left: 150px;
+    font-size: 2rem;
+    color: rgb(255, 188, 65);
+    transition: all 0.5s ease-in-out;
+}
+
+.goback::before{
+    content: '\2190';
+}
+
+.goback:hover{
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 188, 65), 0 0 0.1em rgb(255, 188, 65);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.labels{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.labels-2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review-1{
+    box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    transition: all 0.4s ease-in-out;
+}
+
+.review-1:hover{
+    transition: all 0.4s ease-in-out;
+    box-shadow: 4px 4px 8px 8px grey;   
+}
+
+.review-1 > p > strong{
+    text-shadow: 0.7px 0.7px 0.7px rgb(255, 188, 65);
+    font-size: 2rem;   
+}
+
+.review-1 > p{
+    text-shadow: 0.7px 0.7px 0.7px rgb(255, 188, 65);
+    font-size: 1.6rem;
+    margin-top: 25px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.review-person{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+.form-section{
+    margin-bottom: 100px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+    background: rgba(135, 207, 235, 0.511);
+}
+
+.form-class{
+    padding: 175px;
+}
+
+.apply-h1{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 8rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 188, 65), 0 0 0.1em rgb(255, 188, 65);
+}
+
+input{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.2px groove lightgrey;
+}
+
+::placeholder{
+    color: lightgrey;
+    padding-left: 5px;
+    font-size: 1.2rem;
+}
+
+.form-btn{
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    width: 150px;
+    height: 60px;
+    transition: all 0.5s ease-out;
+    background: rgb(201, 82, 146);
+    color: white;
+    border: 0.7px groove white;
+}
+
+.form-btn:hover{
+    cursor: pointer;
+    background: rgb(201, 82, 146);
+    width: 175px;
+    height: 70px;
+    font-size: 1.6rem;
+    transition: all 0.5s ease-out;
+    border: 2px groove white;
+}
+
+input[type=text]{
+    font-size: 1.4rem;
+    padding-left: 10px;
+}
+
+input[type=email]{
+    font-size: 1.4rem;
+    padding-left: 10px;
+}
+
+.Slides > img{
+    width: 1000px;
+    height: 600px;
+}
+
+.Slides{
+    display: none;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+.info-usa > h1 > strong{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 188, 65), 0 0 0.1em rgb(255, 188, 65);
+    font-size: 3rem;
+}
+
+.info-usa > ol > li{
+    margin-top: 50px;
+    font-size: 1.4rem;
+}
+
+.contact-links{
+    width: 800px;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1000px;
+    background: rgba(135, 207, 235, 0.511);
+}
+
+.contact-links > a{
+    padding: 50px;
+    font-family:  'Courier New', Courier, monospace;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.contact-links:last-child{
+    margin-bottom: 100px;
+}
+
+
+.active .faq-body{
+    display: block;
+}
+
+.map-2{
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 766px){
+
+    .contact-links{
+        width: 300px;
+        border-radius: 20px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1200px;
+        background: rgba(135, 207, 235, 0.511);
+    }
+
+    .map-2{
+        width: 250px;
+        height: 150px;
+    }
+
+
+    .info-usa > ol > li{
+        margin-top: 25px;
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
+
+    .info-usa > h1 > strong{
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 188, 65), 0 0 0.1em rgb(255, 188, 65);
+        font-size: 2rem;
+    }
+
+    .Slides > img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .form-class{
+        padding: 40px;
+    }
+
+    .form-section{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 150px;
+        border-radius: 20px;
+        width: 300px;
+        height: 500px;
+        background: rgba(135, 207, 235, 0.511);
+    }
+
+    .review-1{
+        box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+        border-radius: 20px;
+        text-align: center;
+        width: 300px;
+        transition: all 0.4s ease-in-out;
+        margin-bottom: 30px;
+    }
+
+    .review-1 > p > strong{
+        text-shadow: 0.7px 0.7px 0.7px rgb(255, 188, 65);
+        font-size: 2rem;   
+    }
+    
+    .review-1 > p{
+        text-shadow: 0.7px 0.7px 0.7px rgb(255, 188, 65);
+        font-size: 1.2rem;
+        margin-top: 25px;
+        line-height: 20px;
+        letter-spacing: 0.7px;
+    }
+
+    .goback:hover{
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 188, 65), 0 0 0.1em rgb(255, 188, 65);
+        transition: all 0.3s ease-in-out;
+    
+    }
+
+    .about-img{
+        width: 225px;
+        height: 150px;
+        border-radius: 20px;
+    }
+
+    .about-p{
+        font-size: 1rem;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .about-h1, .apply-h1{
+        font-size: 2rem;
+    }
+
+    .goback{
+        font-size: 1.4rem;
+        margin-left: 40px;
+    }
+
+    .footer-image > img{
+        width: 75px;
+        height: 35px;
+    }
+
+    .info > p{
+        display: none;
+    }
+
+    .faq-body > li{
+        width: 300px;
+        margin-top: 30px;
+        text-shadow: 1.2px 1.2px 1.2px rgb(255, 0, 255);
+        background: black;
+        color: white;
+        list-style-type: none;
+        font-size: 1.2rem;
+    }
+
+    .second-page{
+        flex-direction: column;
+    }
+
+    .faq-page > strong{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .faq-text{
+        margin-bottom: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .navbar > a{
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: azure;
+        transition: all 0.5s ease-out;
+    }
+
+    .footer-nav > a{
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: azure;
+        transition: all 0.5s ease-out;
+    }
+
+    .footer-nav > a:hover{
+        font-size: 0.9rem;
+        text-align: center;
+        padding-top: 6px;
+        width: 70px;
+        height: 500px;
+        background: rgba(194, 194, 194, 0.271);
+        text-shadow: 2px 2px 2px rgb(255, 0, 255);
+        transition: all 0.5s ease-out;
+        border-radius: 20px;
+    }
+
+    .map{
+        display: none;
+    }
+
+    .logo{
+        width: 75px;
+        height: 35px;
+    }
+
+    .navbar > a.nav-a:hover{
+        font-size: 0.9rem;
+        text-align: center;
+        padding-top: 8px;
+        width: 50px;
+        height: 30px;
+        background: rgba(194, 194, 194, 0.271);
+        text-shadow: 2px 2px 2px rgb(255, 0, 255);
+        transition: all 0.5s ease-out;
+        border-radius: 20px;
+    }
+
+    .myVideo{
+        width: 225px;
+        height: 150px;
+    }
+
+    .main > h1{
+        font-size: 2rem;
+    }
+
+    .main > h2{
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+
+    .main > p{
+        margin-top: 80px;
+        font-size: 1.2rem;
+    }
+
+    .text-wt > h2{
+        width: 300px;
+        font-size: 2rem;
+    }
+    
+    .text-wt > p{
+        width: 250px;
+        font-size: 1.2rem;
+    }
+
+    .image-wt, .image-wt-2{
+        width: 225px;
+        height: 150px;
+        margin-top: 10px;
+        border-radius: 20px;
+    }
+
+    .third-page > h2{
+        font-size: 2rem;
+    }
+
+    .third-page > ol > li{
+        font-size: 1.2rem;
+    }
+
+
+    .myvideo{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    
+}
+
+@media screen and (min-width: 767px) and (max-width: 1366px){
+    .text-wt{
+        width: 550px;
+    }
+
+    .image-wt{
+        margin-top: 60px;
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1367px){
+    .text-wt{
+        width: 750px;
+    }
+
+    .image-wt{
+        margin-top: 0;
+        width: 800px;
+        height: 500px;
+    }
+
+    .image-wt-2{
+        margin-top: 0;
+        width: 800px;
+        height: 500px;
+    }
+
+    .myVideo{
+        margin-left: 24%;
+    }
+
+    .about-img{
+        text-align: center;
+    }
+
+    .form-section{
+        margin-left: 25%;
+    }
 }
