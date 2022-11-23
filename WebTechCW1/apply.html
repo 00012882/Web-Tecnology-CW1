@@ -16,7 +16,7 @@
             <a class="nav-a" href="./reviews.html">Reviews</a>
             <a class="nav-a" href="./apply.html">Apply Now</a>
             <a class="nav-a" href="./gallery.html">Gallery</a>
-            <a class="nav-a" href="">Contact Us</a>
+            <a class="nav-a" href="./contact.html">Contact Us</a>
         </nav>
 
         <a class="goback" href="./index.html">Go back</a>
@@ -25,16 +25,19 @@
 
         <section class="form-section">
 
-            <form class="form-class" action="">
-                <input type="text" name="" placeholder="Full Name" id="">
-                <input type="text" name="" placeholder="University" id="">
-                <input type="text" name="" placeholder="Resident Country" id="">
-                <input type="text" name="" placeholder="Course of study" id="">
-                <input type="text" name="" placeholder="Phone" id="">
-                <input type="email" name="" placeholder="Email" id="">
+            <form id="form" class="form-class" action="">
+                <input type="text" name="" placeholder="Full Name" id="name" required>
+                <input type="text" name="" placeholder="University" id="university" required>
+                <input type="text" name="" placeholder="Resident Country" id="country" required>
+                <input type="text" name="" placeholder="Course of study" id="course" required>
+                <input type="text" name="" placeholder="Phone" id="phone" required>
+                <input type="text" name="" placeholder="Email" id="email" required>
+                <br><br><br><br><br><br>    
+
+                <button onclick="checkError()" id="submit" type="submit" class="form-btn">Submit</button>
             </form>
 
-            <button class="form-btn">Submit</button>
+            
         </section>
 
 
@@ -46,11 +49,11 @@
                             <img src="./images/logo.png" alt="">
                         </div>
                         <div class="footer-nav">
-                            <a href="./about_folder/about.html">About Us</a> <br> <br>
                             <a href="./about.html">About Us</a> <br> <br>
-                <a href="./reviews.html">Reviews</a> <br> <br>
-                <a href="./apply.html">Apply Now</a> <br> <br>
-                <a href="./gallery.html">Gallery</a> <br> <br>
+                            <a href="./reviews.html">Reviews</a> <br> <br>
+                            <a href="./apply.html">Apply Now</a> <br> <br>
+                            <a href="./gallery.html">Gallery</a> <br> <br>
+                            <a href="./contact.html">Contact Us</a> <br> <br>
                         </div>
                         <div class="info">
                             <p>Phone: +998 (90) 054 55 37 <br>
@@ -65,5 +68,37 @@
         </div>
     </section>
 
+        <script>
+
+            const name = document.getElementById('name')
+            const university = document.getElementById('university')
+            const country = document.getElementById('country')
+            const course = document.getElementById('course')
+            const phone = document.getElementById('phone')
+            const email = document.getElementById('email')
+
+            
+  
+            function checkError(){
+                if (name.value == 0){
+                    alert("Please fill out all the fields!")
+                } else if (university.value == 0){
+                    alert("Please fill out all the fields!")
+                } else if ( country.value == 0) {
+                    alert("Please fill out all the fields!")
+                } else if (course.value == 0) {
+                    alert("Please fill out all the fields!")
+                } else if (phone.value == 0) {
+                    alert("Please fill out all the fields!")
+                } else if (email.value == 0) {
+                    alert("Please fill out all the fields!")
+                } else {
+                    alert("Successfully submitted!")
+                }
+            }
+        
+
+                
+        </script>
 </body>
 </html>
