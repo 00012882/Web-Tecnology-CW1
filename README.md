@@ -4,7 +4,7 @@ Saidakbarkhon Akhmedov, 4BIS7 student, ID: 00012882
 
 The website I was inspired - https://globalfriendsinc.com
 
-The link to my hosting - https://endearing-starlight-18f7d4.netlify.app/index.html
+The link to my hosting - https://webtechnology-cw1-00012882.netlify.app
 
 The link to a GitHub - https://github.com/00012882/Web-Tecnology-CW1
 
